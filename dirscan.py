@@ -32,3 +32,7 @@ for word in wordlist:
 		lock.acquire()
 		print('[x]' + r.url + ' Found! Resp Code:' +  r.status_code)
 		lock.release()
+
+		
+for i in range(0, 100):
+    Thread(target=Main).start()
